@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./images/logo.png">
+  <title>ByteBurger Home</title>
+</head>
+<script>
+  window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    setTimeout(() => {
+      splash.classList.add('hidden');
+    }, 2000); // visible for 2 seconds
+  });
+</script>
+<body>
+
+<!-- HEADER (same as menu page) -->
+<header class="header">
+  <div class="header-left">
+    <span class="cart">🛒</span>
+    <button class="lang-btn">AR</button>
+  </div>
+
+  <div class="header-center">
+    <img src="./images/logo.png" class="logo" alt="Logo">
+  </div>
+
+  <div class="header-right">
+    <button class="login-btn">Login</button>
+    <button class="signup-btn">Sign Up</button>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- OFFERS SECTION -->
+  <h2 class="section-title">🔥 Offers</h2>
+  <div class="menu">
+    <div class="card">
+      <div class="card-top">
+        <img src="./images/combo1.png" alt="Classic Combo">
+        <h3>Classic Combo</h3>
+      </div>
+      <p>Classic Burger + Fries + Cola</p>
+      <div class="card-bottom">
+        <span class="price">120 EGP</span>
+        <span class="add">+</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <img src="./images/combo2.png" alt="Chicken Combo">
+        <h3>Chicken Combo</h3>
+      </div>
+      <p>Chicken Burger + Fries + Lemonade</p>
+      <div class="card-bottom">
+        <span class="price">130 EGP</span>
+        <span class="add">+</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP SELLING SECTION -->
+  <h2 class="section-title">🏆 Top Selling</h2>
+  <div class="menu">
+    <div class="card">
+      <div class="card-top">
+        <img src="./images/burger5.png" alt="Cheese Double">
+        <h3>Cheese Double</h3>
+      </div>
+      <p>Double patty with cheddar cheese</p>
+      <div class="card-bottom">
+        <span class="price">140 EGP</span>
+        <span class="add">+</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <img src="./images/burger3.png" alt="Chicken Burger">
+        <h3>Chicken Burger</h3>
+      </div>
+      <p>Crispy grilled chicken with sauce</p>
+      <div class="card-bottom">
+        <span class="price">85 EGP</span>
+        <span class="add">+</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW MENU BUTTON -->
+  <div class="view-menu-container">
+    <a href="menu.html" class="view-menu-btn">View Full Menu</a>
+  </div>
+
+</main>
+
+<!-- FOOTER (same as menu page) -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <img src="./images/logo.png" class="footer-logo" alt="Logo">
+      <div class="footer-columns">
+        <div>
+          <h4>Navigation</h4>
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="cart.html">Cart</a>
+        </div>
+
+        <div>
+          <h4>Information</h4>
+          <a href="about.html">About Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <div>
+          <h4>Account</h4>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <p>Login</p>
+          <p>Sign Up</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <h3>Hotline: 19000</h3>
+      <button class="lang-btn">AR</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 ByteBurger</p>
+    <div class="socials">
+      <span>FB</span>
+      <span>IG</span>
+      <span>TW</span>
+    </div>
+  </div>
+</footer>
+<!-- SPLASH SCREEN -->
+<div id="splash-screen">
+  <img src="./images/logo.png" alt="ByteBurger Logo" class="splash-logo">
+</div>
+</body>
+</html>
